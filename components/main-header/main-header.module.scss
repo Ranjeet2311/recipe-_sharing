@@ -1,0 +1,52 @@
+.logo {
+  margin-right: 15px;
+  width: 60px;
+  height: auto;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.li {
+  list-style: none;
+  margin-right: 12px;
+}
+.a {
+  text-decoration: none;
+  color: white !important;
+  box-shadow: 1px 1px 2px #062133;
+  padding: 4px 8px;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo_link {
+  text-decoration: none;
+  color: orange;
+}
+
+.link:hover,
+.link:active {
+  color: orange;
+}
+
+.active {
+  color: orange !important;
+  box-shadow: 1px 1px 2px orange;
+  background-color: white;
+  border-radius: 6px;
+  border: none;
+}
+
+// filter: drop-shadow(0 0 80px rgba(0, 12, 232, .6666666667));

@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+//   font-family: "Exo 2", sans-serif;
+// font-family: "Montserrat", sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+$mainFont: "Montserrat", sans-serif;
+$basFont: "Exo 2", sans-serif;
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #2980b9; /* fallback for old browsers */
+  background-repeat: no-repeat;
+  background: -webkit-linear-gradient(
+    to top,
+    #2980b9,
+    #6dd5fa,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2980b9,
+    #6dd5fa,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $mainFont;
+}
+
+h1 {
+  font-size: 46px !important ;
+  line-height: 56px !important;
+  font-weight: 800 !important;
+}
+
+h2 {
+  font-size: 36px !important ;
+  line-height: 46px !important;
+  font-weight: 700 !important;
+}
+
+p,
+.btn,
+a {
+  font-family: $basFont;
+  font-size: 18px !important;
+}
+
+// .header-background {
+//   position: absolute;
+//   width: 100%;
+//   height: 320px;
+//   top: 0;
+//   left: 0;
+//   z-index: -1;
+//   /* background-image: url("../public/images/pageImages/wave.svg"); */
+// }
+
+// svg {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+// }
+
+.not-found,
+.error {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.not-found h1,
+.error h1 {
+  font-size: 5rem;
+  margin: 0px;
+  font-weight: 900;
+  color: #262626;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #f9572a, #ffc905);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.not-found p,
+.error p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ddd8d8;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: white;
+}
+
+.box {
+  background-color: rgba(128, 206, 234, 0.6);
+  padding: 10px 16px;
+  border-radius: 12px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.page {
+  padding-top: 60px;
+}
+
+.btn-md {
+  background: #f2994a;
+  background: -webkit-linear-gradient(to right, #f2c94c, #f2994a);
+  background: linear-gradient(to right, #f2c94c, #f2994a);
+  padding: 10px 20px !important;
+  color: white !important;
+  transition: 0.6s !important;
+  font-size: 20px !important;
+  font-family: $basFont !important;
+  border: none !important;
+
+  &:hover {
+    transition: 0.6s !important;
+    background: #f2994a;
+    background: -webkit-linear-gradient(to right, #f2994a, #f2c94c);
+    background: linear-gradient(to right, #f2994a, #f2c94c);
+  }
+}
+
+.box {
+  background-color: rgb(109, 213, 250, 0.6);
+}
+
+.card {
+  border-radius: 12px !important;
+  overflow: hidden;
+  cursor: pointer;
+  background: #6dd5fa !important;
+  // color: black !important;
+
+  &:hover {
+    img {
+      transition: all 0.6 ease-in;
+      transform: scale(1.1);
+    }
+    .card-title {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    border-radius: 12px 12px 0 !important;
+  }
+
+  .card-footer {
+    border: none !important;
+    background: transparent;
+  }
+
+  .card-title {
+    font-weight: 700;
+  }
+  .card-text {
+    font-weight: 500;
+    // color: black;
+  }
+}
+
+form {
+  max-width: 700px !important;
+  margin: 4px auto;
+  display: block;
+
+  label {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: $basFont;
+    margin-top: 12px;
+    margin-bottom: 8px !important;
+  }
+}
