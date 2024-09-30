@@ -9,6 +9,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  span {
+    color: black;
+  }
 }
 
 .ul {
@@ -22,7 +26,7 @@
 }
 .a {
   text-decoration: none;
-  color: white !important;
+  color: black !important;
   box-shadow: 1px 1px 2px #062133;
   padding: 4px 8px;
 }
